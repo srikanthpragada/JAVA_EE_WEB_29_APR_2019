@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Java EE</title>
+<link rel="stylesheet" href="styles.css"/>
+<script>
+ function showFee() {
+	 // get access to checkbox
+	 var existing = document.getElementById("existing");
+	 if(existing.checked)
+	     alert(9000);
+	 else
+		 alert(10000);
+ }
+</script>
+</head>
+<body>
+	<h1>Java EE</h1>
+	Java EE is used to build web applications.
+	<h3>Topics</h3>
+	<ul>
+		<li>Servlets</li>
+		<li>Jsps</li>
+		<li>JSTL</li>
+	</ul>
+	<input type="checkbox" id="existing">Are you an existing student? 
+	<p></p>
+	<button onclick="showFee()">Show Fee</button>
+
+</body>
+</html>

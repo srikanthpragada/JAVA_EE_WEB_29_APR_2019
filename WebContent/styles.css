@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+.bright{
+	background-color:blue;
+	color:white;
+}
+
+body {
+	font-size:12pt;
+	font-family: verdana;
+}
+
+h1 {
+	color :red;
+}
+
+li {
+	color:blue;
+}
+
