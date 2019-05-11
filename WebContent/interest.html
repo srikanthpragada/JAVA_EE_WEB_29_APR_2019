@@ -5,11 +5,13 @@
 <title>Interest Calculation</title>
 </head>
 <body>
-<h1>Interest Calculation</h1>
-<form action="/interest">
-
-
-<input type="submit" value="Calculate Interest"/>
-</form>
+	<h1>Interest Calculation</h1>
+	<form action="interest" method="post">
+		Amount <br /> <input type="number" name="amount" />
+		<p></p>
+		Period in Months<br /> <input type="number" name="period" />
+		<p></p>
+		<input type="submit" value="Calculate Interest" />
+	</form>
 </body>
 </html>
