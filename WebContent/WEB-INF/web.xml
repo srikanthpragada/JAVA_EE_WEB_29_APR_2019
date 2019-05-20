@@ -14,7 +14,7 @@
     <url-pattern>/message</url-pattern>
   </servlet-mapping>
   <session-config>
-     <session-timeout>5</session-timeout>
+    <session-timeout>5</session-timeout>
   </session-config>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
