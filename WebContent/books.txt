@@ -1,0 +1,17 @@
+
+create table books
+( id  number(5) 		primary key,
+  title varchar2(50)  	not null,
+  author varchar2(100),
+  category char(1)   	check(category in ('f','n','t')),
+  nopages number(4)
+);  
+
+
+create sequence book_id_seq nocache;  
+
+insert into books values
+(book_id_seq.nextval,'Java Comp. Ref.','Herbert Schildt','t',1120);
+
+insert into books values
+(book_id_seq.nextval,'Spring in Action','Ed Roman','t',980);

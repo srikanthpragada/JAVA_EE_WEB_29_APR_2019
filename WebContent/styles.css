@@ -5,6 +5,25 @@
 	color:white;
 }
 
+.banner {
+	background-color:red;
+	color:white;
+	letter-spacing:5pt;
+	font-family:Arial;
+	font-size:24pt;
+	font-weight:bold;
+}
+
+.menu {
+	background-color:#eeeeee;
+	font-weight:bold;
+}
+
+.colhead {
+	background-color:black;
+	color:white;
+}
+
 body {
 	font-size:12pt;
 	font-family: verdana;
