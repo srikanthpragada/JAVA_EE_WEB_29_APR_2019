@@ -31,7 +31,7 @@
 		<tr>
 			<td>${book.title}</td>
 			<td>${book.author}</td>
-			<td>${book.category}</td>
+			<td style="text-align:center">${book.category}</td>
 			<td>${book.nopages}</td>
 			<td><a href="booksedit.jsp?id=${book.id}">Edit</a> 
 			<a onclick="return confirm('Do you really want to delete book?')"
@@ -40,7 +40,5 @@
 	</c:forEach>
 
 </table>
-</body>
-</html>
 </body>
 </html>

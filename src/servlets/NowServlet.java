@@ -16,9 +16,9 @@ public class NowServlet extends HttpServlet {
 			             HttpServletResponse response) throws ServletException, IOException {
 
 		  PrintWriter writer = response.getWriter();
-		  response.setContentType("text/html");
+		  response.setContentType("text/plain");
 		  LocalDateTime ldt = LocalDateTime.now();
-		  writer.println("<h2>" + ldt.toString() + "</h2>");
+		  writer.println(ldt.toString());
 		  
 	}
 

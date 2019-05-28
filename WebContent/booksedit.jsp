@@ -29,6 +29,7 @@
 <c:set var="book" value="${books.rows[0]}" />
 
 <form action="booksupdate.jsp" method="post">
+    <input type="hidden" name="id" value="${param.id}" />
 	Title <br /> <input type="text" name="title" size="50" value="${book.title}" />
 	<p></p>
 	Author <br /> <input type="text" name="author" size="50" value="${book.author}" />

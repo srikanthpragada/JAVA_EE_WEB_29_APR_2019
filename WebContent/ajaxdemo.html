@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ajax Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  function getDateTime() {
+	  $.get("http://localhost:8888/webdemo/now",null,showDateTime);
+  }
+  
+  function showDateTime(response) {
+	  $("#datetime").text(response)
+  }
+  
+</script>
+</head>
+<body>
+<h1>Ajax Demo</h1>
+<button onclick="getDateTime()">Show Date and Time</button>
+<h2 id="datetime"></h2>
+<h1>Book Details</h1>
+Id : <input type="number" id="bookid" />
+<button>Details</button>
+
+
+</body>
+</html>
