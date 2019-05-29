@@ -13,6 +13,20 @@
 	  $("#datetime").text(response)
   }
   
+  function getBook() {
+	  $.getJSON("http://localhost:8888/webdemo/book?bookid=" + $("#bookid").val(),
+ 		   null,showBook);
+  }
+  
+  function showBook(response) {
+	  console.log(response)
+	  if(response.message)
+		  $("#book").text(response.message)
+      else
+    	  $("#book").text(response.title + " - "  + response.author);
+		  
+  }
+  
 </script>
 </head>
 <body>
@@ -21,8 +35,8 @@
 <h2 id="datetime"></h2>
 <h1>Book Details</h1>
 Id : <input type="number" id="bookid" />
-<button>Details</button>
-
+<button onclick="getBook()">Details</button>
+<h3 id="book"></h3>
 
 </body>
 </html>
